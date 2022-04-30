@@ -46,6 +46,7 @@ if __name__ == '__main__':
     accounts3 = '0xC7e8561e46a62EfA646817c3bd160E9005301fba'
     accounts4 = '0xBC703C9680C9dA54DFDE29B2681B3DdbB20b6eA3'
     accounts5 = '0xc7c4B40A2A0f70008C1cB4F1876ceAA19764d400'
+    accounts6 = '0x80ee32C6Ef1423F52e9AF66F2624010Ca89eAB41'
     
 
     for i in range(99999):
@@ -55,6 +56,7 @@ if __name__ == '__main__':
         balance3 = QuerryBalance(accounts3)
         balance4 = QuerryBalance(accounts4)
         balance5 = QuerryBalance(accounts5)
+        balance6 = QuerryBalance(accounts6)
 
         ResourcesBalance0= QuerryResourcesBalance(accounts0,0)
         ResourcesBalance1= QuerryResourcesBalance(accounts1,1)
@@ -62,6 +64,7 @@ if __name__ == '__main__':
         ResourcesBalance3= QuerryResourcesBalance(accounts3,3)
         ResourcesBalance4= QuerryResourcesBalance(accounts4,4)
         ResourcesBalance5= QuerryResourcesBalance(accounts5,5)
+        ResourcesBalance6= QuerryResourcesBalance(accounts6,6)
         
 
         price0=balance0/ResourcesBalance0
@@ -70,6 +73,7 @@ if __name__ == '__main__':
         price3=balance3/ResourcesBalance3
         price4=balance4/ResourcesBalance4
         price5=balance5/ResourcesBalance5
+        price6=balance6/ResourcesBalance6
 
 
         print("GARPEN COPPER:",price0)
@@ -78,6 +82,5 @@ if __name__ == '__main__':
         print("OZYMODIUM:",price3)
         print("CRAFTING CATALYST:",price4)
         print("COMBINE CATALYST",price5)
+        print("TERRAFORM_CAPSULE",price6)
         time.sleep(10)
-
-
